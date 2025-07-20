@@ -1,6 +1,6 @@
 import React from "react";
 
-function GoalItem({ goal, onUpdateGoal, onDeleteGoal }) {
+function Goals({ goal, onUpdateGoal, onDeleteGoal }) {
   const percent = (goal.savedAmount / goal.targetAmount) * 100;
   const remaining = goal.targetAmount - goal.savedAmount;
   const deadline = new Date(goal.deadline);
@@ -24,4 +24,4 @@ function GoalItem({ goal, onUpdateGoal, onDeleteGoal }) {
   );
 }
 
-export default GoalItem;
+export default Goals;

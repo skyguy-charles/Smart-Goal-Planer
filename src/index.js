@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+import reportWebVitals from './reportWebVitals';
+import AddGoalForm from './components/AddgoalForm';
+import GoalNeeds from './components/GoalNeeds';
+import Goals from './components/Goals';
+import Overvw from './components/Overvw'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AddGoalForm>
+      <GoalNeeds>
+        <Goals></Goals>
+        <Overvw></Overvw>
+      </GoalNeeds>
+    </AddGoalForm>
+  
   </React.StrictMode>
 );
 
